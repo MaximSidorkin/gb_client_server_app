@@ -31,9 +31,9 @@ print('*'*100)
 и определить тип, содержимое и длину соответствующих переменных.
 '''
 print('Задание №2\n')
-c = b'class'
-f = b'function'
-m = b'method'
+c = bytes(b'class')
+f = bytes(b'function')
+m = bytes(b'method')
 print('Тип class == ', type(c), 'содержимое class == ', c, 'длинна class == ', len(c))
 print('Тип class == ', type(f), 'содержимое class == ', f, 'длинна class == ', len(f))
 print('Тип class == ', type(m), 'содержимое class == ', m, 'длинна class == ', len(m))
@@ -58,8 +58,8 @@ except:
 
 # try:
 #     print(b'класс')
-# except(SyntaxError):
-#     print('класс - невозможно записать в байтовом типе.')
+# except SyntaxError as e:
+#     print(e, 'класс - невозможно записать в байтовом типе.')
 #
 # try:
 #     print(b'функция')
